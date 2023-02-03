@@ -1,0 +1,546 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.side-bar {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+}
+
+.side-bar-container {
+    position: fixed;
+    width: 251px;
+    height: 100vh;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #1d1f23;
+}
+
+.nav-menu1 {
+    display: flex;
+    height: 52px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    /* background-color: lightgray; */
+}
+
+.nav-group1 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-group1:hover {
+    background-color: #1d1f23;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.nav-menu2 {
+    height: 466px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+
+    /* background-color: aquamarine; */
+}
+
+.nav-item {
+    display: flex;
+    height: 58.25px;
+
+    color: white;
+}
+
+.nav-group2 {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.nav-group2:hover {
+    background-color: #1d1f23;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav-item span {
+    margin-left: 20px;
+    margin-right: 16px;
+}
+
+.btn-tweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 215px;
+    border-radius: 30px;
+    border: none;
+
+    color: white;
+    background-color: #1d9bf0;
+}
+
+.btn-tweet:hover {
+    cursor: pointer;
+    background-color: #0f659e
+}
+
+.profile {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.nav-group3 {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 12px;
+
+    color: white;
+}
+
+.nav-group3:hover {
+    background-color: #1d1f23;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.nav-group3 span {
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 598px;
+    height: auto;
+    border-right: 1px solid #1d1f23;
+}
+
+.title {
+    display: flex;
+    width: 566px;
+    height: 53px;
+    color: white;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border-bottom: 1px solid #1d1f23;
+}
+
+.tweet-section {
+    display: flex;
+    width: 566px;
+    height: 108px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* padding-top: 4px;
+    padding-bottom: 4px; */
+    border-bottom: 1px solid #1d1f23;
+
+}
+
+.tweet-profile {
+    width: 48px;
+    height: 104px;
+    padding-top: 4px;
+    margin-right: 12px;
+}
+
+.tweet-profile img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #1d1f23
+}
+
+.tweet-write {
+    flex: 1;
+
+
+}
+
+input[type="text"] {
+    width: 502px;
+    height: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+}
+
+.tweet-write div {
+    display: flex;
+    width: 502px;
+    height: 48px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+#tweet-write-1 img {
+    width: 34px;
+    height: 34px;
+    align-self: center;
+}
+
+.tweet-write div div:last-child {
+    justify-content: end;
+}
+
+.btn-tweet-2 {
+    align-self: center;
+
+    width: 76px;
+    height: 36px;
+    border-radius: 30px;
+    border: none;
+
+    color: white;
+    background-color: #1d9bf0;
+}
+
+.btn-tweet-2:hover {
+    cursor: pointer;
+    background-color: #0f659e;
+}
+
+#tweet-write-1 img:hover {
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #1d9cf021;
+}
+
+.tweet-feed {
+    display: flex;
+    width: 566px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    height: 98px;
+    border-bottom: 1px solid #1d1f23;
+}
+
+.tweet-feed:hover {
+    cursor: pointer;
+}
+
+.feed-profile {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    height: 86px;
+    margin-right: 12px;
+}
+
+.feed-profile img {
+    background-color: #1d1f23;
+    border-radius: 100%;
+}
+
+.feed-profile img:hover {
+    background-color: #1d1f23;
+    border-radius: 100%;
+}
+
+.feed-content {
+    width: 506px;
+    height: 74;
+    padding-bottom: 12px;
+}
+
+.feed-content-name {
+    display: flex;
+    width: 506px;
+    height: 20px;
+}
+
+.feed-content-name>span:first-child {
+    color: white;
+    padding-right: 5px;
+}
+
+.feed-content-name>span:first-child:hover {
+    text-decoration: underline;
+}
+
+.feed-content-name>span:nth-child(2) {
+    color: #5B5F63;
+    padding-right: 5px;
+}
+
+.feed-content-name>span:nth-child(3) {
+    color: #5B5F63;
+}
+
+.feed-content-name>span:nth-child(3):hover {
+    color: #5B5F63;
+    text-decoration: underline;
+}
+
+.feed-content-name>span:last-child {
+    flex: 1;
+    text-align: end;
+    padding-right: 12px;
+    color: #5B5F63;
+}
+
+.feed-content-name>span>img:hover {
+    background-color: #1d9cf088;
+    border-radius: 100%;
+}
+
+.feed-content-content {
+    width: 506px;
+    height: 20px;
+    color: white;
+
+}
+
+.feed-content-action {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.feed-content-action>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed-content-action>span:first-child:hover {
+    background-color: #1d9cf088;
+    border-radius: 100%;
+}
+
+.feed-content-action>span:nth-child(2):hover {
+    background-color: #108d3a88;
+    border-radius: 100%;
+}
+
+.feed-content-action>span:nth-child(3):hover {
+    background-color: #a5262688;
+    border-radius: 100%;
+}
+
+.feed-content-action>span:last-child:hover {
+    background-color: #1d9cf088;
+    border-radius: 100%;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 100hv;
+    padding-left: 16px;
+    /* border-left: 1px solid #1d1f23; */
+}
+
+.search-box>input[type="text"] {
+    width: 350px;
+    height: 53px;
+    border-radius: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #1d1f23;
+}
+
+.trend-title {
+    display: flex;
+    width: 348px;
+    height: 48px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 15px;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    background-color: #1d1f23;
+}
+
+.trend-bar {
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    height: 82px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    background-color: #1d1f23;
+}
+
+.trend-bar:hover,
+.trend-more:hover {
+    background-color: #2f2f30;
+    cursor: pointer;
+}
+
+.trend-bar-top {
+    width: 316px;
+    height: 16px;
+    color: #5B5F63;
+}
+
+.trend-bar-middle {
+    width: 316px;
+    height: 20px;
+    margin-top: 4px;
+    color: white;
+}
+
+.trend-bar-bottom {
+    width: 316px;
+    height: 16px;
+    margin-top: 4px;
+    color: #5B5F63;
+}
+
+.trend-more {
+    width: 316px;
+    height: 20px;
+    padding: 16px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    color: #1c8edc;
+    background-color: #1d1f23;
+}
+
+.follow-title {
+    display: flex;
+    width: 348px;
+    height: 48px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 12px;
+    font-size: 15px;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    background-color: #1d1f23;
+}
+
+.follow-profile {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 348px;
+    height: 72px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+    background-color: #1d1f23;
+}
+
+.follow-profile:hover {
+    background-color: #2f2f30;
+    cursor: pointer;
+}
+
+.follow-profile>img {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    background-color: #2f2f30;
+    border-radius: 100%;
+}
+
+.follow-profile>span {
+    width: 158px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.follow-profile>span>div:first-child:hover {
+    text-decoration: underline;
+}
+
+.follow-profile>span>div:last-child {
+    color: #5B5F63;
+}
+
+.btn-follow {
+    justify-self: end;
+    width: 77px;
+    height: 32px;
+    border-radius: 24px;
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+.btn-follow:hover {
+    cursor: pointer;
+    background-color: rgb(233, 230, 230);
+}
+
+.follow-more {
+    width: 316px;
+    height: 20px;
+    padding: 16px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    color: #1c8edc;
+    background-color: #1d1f23;
+}
+
+.follow-more:hover {
+    background-color: #2f2f30;
+    cursor: pointer;
+}
+
+.footer {
+    box-sizing: border-box;
+    width: 350px;
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #5B5F63;
+}
+
+.footer>div>span {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.footer>div>span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
